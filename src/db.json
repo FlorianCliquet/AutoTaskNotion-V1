@@ -1,0 +1,387 @@
+{
+    "object": "list",
+    "results": [
+        {
+            "object": "page",
+            "id": "9718a745-c95a-46f9-ae02-48ceae19abe5",
+            "created_time": "2024-04-10T13:47:00.000Z",
+            "last_edited_time": "2024-04-10T13:48:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "d03a8ca2-db7c-4850-b86d-dcb574535518"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "d03a8ca2-db7c-4850-b86d-dcb574535518"
+            },
+            "cover": null,
+            "icon": {
+                "type": "external",
+                "external": {
+                    "url": "https://www.notion.so/icons/target_lightgray.svg"
+                }
+            },
+            "parent": {
+                "type": "database_id",
+                "database_id": "a663ceac-a2f7-4ee8-a820-fffb24295cdd"
+            },
+            "archived": false,
+            "in_trash": false,
+            "properties": {
+                "lien": {
+                    "id": "nX%5Ev",
+                    "type": "rich_text",
+                    "rich_text": []
+                },
+                "Nom du projet": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "Finir AutoTaskNotion",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "Finir AutoTaskNotion",
+                            "href": null
+                        }
+                    ]
+                },
+                "Propriétaire": {
+                    "id": "notion%3A%2F%2Fprojects%2Fpeople_property",
+                    "type": "people",
+                    "people": [
+                        {
+                            "object": "user",
+                            "id": "d03a8ca2-db7c-4850-b86d-dcb574535518"
+                        }
+                    ]
+                },
+                "État": {
+                    "id": "notion%3A%2F%2Fprojects%2Fstatus_property",
+                    "type": "status",
+                    "status": {
+                        "id": "in-progress",
+                        "name": "En cours",
+                        "color": "yellow"
+                    }
+                },
+                "Priorité": {
+                    "id": "notion%3A%2F%2Fprojects%2Fpriority_property",
+                    "type": "select",
+                    "select": {
+                        "id": "a195eabf-b0b8-4070-b23e-2349564bc765",
+                        "name": "5",
+                        "color": "pink"
+                    }
+                },
+                "Dates": {
+                    "id": "notion%3A%2F%2Fprojects%2Fproject_dates_property",
+                    "type": "date",
+                    "date": {
+                        "start": "2024-04-10",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "Résumé": {
+                    "id": "notion%3A%2F%2Fprojects%2Fproject_summary_feature",
+                    "type": "rich_text",
+                    "rich_text": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "Je souhaite faire une interface web react pour mon app",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "Je souhaite faire une interface web react pour mon app",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/Finir-AutoTaskNotion-9718a745c95a46f9ae0248ceae19abe5",
+            "public_url": null
+        },
+        {
+            "object": "page",
+            "id": "ea46f563-e05e-473e-b837-abb268d52cbd",
+            "created_time": "2024-04-03T20:17:00.000Z",
+            "last_edited_time": "2024-04-04T15:00:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "d03a8ca2-db7c-4850-b86d-dcb574535518"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "d03a8ca2-db7c-4850-b86d-dcb574535518"
+            },
+            "cover": null,
+            "icon": {
+                "type": "external",
+                "external": {
+                    "url": "https://www.notion.so/icons/target_lightgray.svg"
+                }
+            },
+            "parent": {
+                "type": "database_id",
+                "database_id": "a663ceac-a2f7-4ee8-a820-fffb24295cdd"
+            },
+            "archived": false,
+            "in_trash": false,
+            "properties": {
+                "lien": {
+                    "id": "nX%5Ev",
+                    "type": "rich_text",
+                    "rich_text": []
+                },
+                "Nom du projet": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "Portfolio Adrien",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "Portfolio Adrien",
+                            "href": null
+                        }
+                    ]
+                },
+                "Propriétaire": {
+                    "id": "notion%3A%2F%2Fprojects%2Fpeople_property",
+                    "type": "people",
+                    "people": [
+                        {
+                            "object": "user",
+                            "id": "d03a8ca2-db7c-4850-b86d-dcb574535518"
+                        }
+                    ]
+                },
+                "État": {
+                    "id": "notion%3A%2F%2Fprojects%2Fstatus_property",
+                    "type": "status",
+                    "status": {
+                        "id": "in-progress",
+                        "name": "En cours",
+                        "color": "yellow"
+                    }
+                },
+                "Priorité": {
+                    "id": "notion%3A%2F%2Fprojects%2Fpriority_property",
+                    "type": "select",
+                    "select": {
+                        "id": "a195eabf-b0b8-4070-b23e-2349564bc765",
+                        "name": "5",
+                        "color": "pink"
+                    }
+                },
+                "Dates": {
+                    "id": "notion%3A%2F%2Fprojects%2Fproject_dates_property",
+                    "type": "date",
+                    "date": {
+                        "start": "2024-04-04",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "Résumé": {
+                    "id": "notion%3A%2F%2Fprojects%2Fproject_summary_feature",
+                    "type": "rich_text",
+                    "rich_text": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "Je dois faire un portfolio pour montrer les oeuvres 3d d’Adrien",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "Je dois faire un portfolio pour montrer les oeuvres 3d d’Adrien",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/Portfolio-Adrien-ea46f563e05e473eb837abb268d52cbd",
+            "public_url": null
+        },
+        {
+            "object": "page",
+            "id": "5c9b711e-c53c-426b-8958-66c356b8750a",
+            "created_time": "2024-04-03T20:15:00.000Z",
+            "last_edited_time": "2024-04-04T15:00:00.000Z",
+            "created_by": {
+                "object": "user",
+                "id": "d03a8ca2-db7c-4850-b86d-dcb574535518"
+            },
+            "last_edited_by": {
+                "object": "user",
+                "id": "d03a8ca2-db7c-4850-b86d-dcb574535518"
+            },
+            "cover": null,
+            "icon": {
+                "type": "external",
+                "external": {
+                    "url": "https://www.notion.so/icons/target_lightgray.svg"
+                }
+            },
+            "parent": {
+                "type": "database_id",
+                "database_id": "a663ceac-a2f7-4ee8-a820-fffb24295cdd"
+            },
+            "archived": false,
+            "in_trash": false,
+            "properties": {
+                "lien": {
+                    "id": "nX%5Ev",
+                    "type": "rich_text",
+                    "rich_text": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "https://www.youtube.com/watch?v=XkOXNlHJP6M",
+                                "link": {
+                                    "url": "https://www.youtube.com/watch?v=XkOXNlHJP6M"
+                                }
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "https://www.youtube.com/watch?v=XkOXNlHJP6M",
+                            "href": "https://www.youtube.com/watch?v=XkOXNlHJP6M"
+                        }
+                    ]
+                },
+                "Nom du projet": {
+                    "id": "title",
+                    "type": "title",
+                    "title": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "SAAS automation Builder",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "SAAS automation Builder",
+                            "href": null
+                        }
+                    ]
+                },
+                "Propriétaire": {
+                    "id": "notion%3A%2F%2Fprojects%2Fpeople_property",
+                    "type": "people",
+                    "people": [
+                        {
+                            "object": "user",
+                            "id": "d03a8ca2-db7c-4850-b86d-dcb574535518"
+                        }
+                    ]
+                },
+                "État": {
+                    "id": "notion%3A%2F%2Fprojects%2Fstatus_property",
+                    "type": "status",
+                    "status": {
+                        "id": "in-progress",
+                        "name": "En cours",
+                        "color": "yellow"
+                    }
+                },
+                "Priorité": {
+                    "id": "notion%3A%2F%2Fprojects%2Fpriority_property",
+                    "type": "select",
+                    "select": {
+                        "id": "272c4920-72f0-4835-9c17-7f0272968fd0",
+                        "name": "4",
+                        "color": "brown"
+                    }
+                },
+                "Dates": {
+                    "id": "notion%3A%2F%2Fprojects%2Fproject_dates_property",
+                    "type": "date",
+                    "date": {
+                        "start": "2024-04-04",
+                        "end": null,
+                        "time_zone": null
+                    }
+                },
+                "Résumé": {
+                    "id": "notion%3A%2F%2Fprojects%2Fproject_summary_feature",
+                    "type": "rich_text",
+                    "rich_text": [
+                        {
+                            "type": "text",
+                            "text": {
+                                "content": "je dois build l’application afin d’upgrade",
+                                "link": null
+                            },
+                            "annotations": {
+                                "bold": false,
+                                "italic": false,
+                                "strikethrough": false,
+                                "underline": false,
+                                "code": false,
+                                "color": "default"
+                            },
+                            "plain_text": "je dois build l’application afin d’upgrade",
+                            "href": null
+                        }
+                    ]
+                }
+            },
+            "url": "https://www.notion.so/SAAS-automation-Builder-5c9b711ec53c426b895866c356b8750a",
+            "public_url": null
+        }
+    ],
+    "next_cursor": null,
+    "has_more": false,
+    "type": "page_or_database",
+    "page_or_database": {},
+    "request_id": "f23c40d6-9859-48bf-9219-0e3501ab9389"
+}
