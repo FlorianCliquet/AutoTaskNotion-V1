@@ -28,6 +28,7 @@ Avant de commencer à utiliser le script, vous devez configurer les clés d'API 
 
 1. Créez un fichier `.env` à la racine du projet (Si vous le faites, pensez à changer le path des .env) ou je conseille dans un folder externe tels que :
 
+```
 random_folder/
 │
 ├── AutoTaskNotion-V1/
@@ -38,6 +39,7 @@ random_folder/
          └── credentials.json -> obtenable avec Oauth2 sur l'API Google Calendar
          └── .env
          └── token.json (créé automatiquement)
+```
 
 2. Ajoutez les clés d'API de Notion et de Google Calendar, ainsi que les identifiants des bases de données Notion dans le fichier `.env` comme suit :
 
@@ -100,6 +102,7 @@ Before you start using the script, you need to configure the Notion and Google C
 
 1. Create a `.env` file at the root of the project (If you do it, remember to change the path of the .env) or I advise you to put it in an external folder such as:
 
+```
 random_folder/
 │
 ├── AutoTaskNotion-V1/
@@ -110,6 +113,7 @@ random_folder/
          └── credentials.json -> obtainable with Oauth2 on the Google Calendar API
          └── .env
          └── token.json (created automatically)
+```
 
 2. Add the Notion and Google Calendar API keys, as well as the Notion database IDs, to the `.env` file as follows:
 
