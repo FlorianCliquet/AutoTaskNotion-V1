@@ -3,6 +3,7 @@ from googleapiclient.errors import HttpError
 import re
 
 def insert_tasks_into_calendar(service, calendar_id, array_available_periods, tasks):
+    print("Inserting tasks into calendar...")
     for task in tasks:
             lastimplentday = ''
             for period in array_available_periods:

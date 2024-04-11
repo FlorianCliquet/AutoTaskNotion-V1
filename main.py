@@ -14,10 +14,16 @@ from src.fetch_notion import get_projet_pages
 import os
 import pytz
 paris_timezone = pytz.timezone('Europe/Paris')
-load_dotenv()
+dotenv_path = './../ConfigShit/AutoTaskNotion-V1/.env'
+try:
+    load_dotenv(dotenv_path)
+except Exception as e:
+    print(f"Error loading .env file: {e}")
+
 notion_api_key = os.getenv('NOTION_API')
 notion_projet_id = os.getenv('PROJET_ID')
 notion_task_id = os.getenv('TASK_ID')
+external_calendar = os.getenv('EXTERNAL_CALENDAR')
 
 SCOPES = ["https://www.googleapis.com/auth/calendar"]
 
@@ -28,15 +34,15 @@ headers = {
 }
 def get_credentials():
     creds = None
-    if os.path.exists('token.json'):
-        creds = Credentials.from_authorized_user_file('token.json')
+    if os.path.exists('./../ConfigShit/AutoTaskNotion-V1/token.json'):
+        creds = Credentials.from_authorized_user_file('./../ConfigShit/AutoTaskNotion-V1/token.json')
     if not creds or not creds.valid:
         if creds and creds.expired and creds.refresh_token:
             creds.refresh(Request())
         else:
-            flow = InstalledAppFlow.from_client_secrets_file('credentials.json', SCOPES)
+            flow = InstalledAppFlow.from_client_secrets_file('./../ConfigShit/AutoTaskNotion-V1/credentials.json', SCOPES)
             creds = flow.run_local_server(port=0)
-        with open('token.json', 'w') as token:
+        with open('./../ConfigShit/AutoTaskNotion-V1/token.json', 'w') as token:
             token.write(creds.to_json())
     return creds
 
@@ -70,7 +76,6 @@ def get_busy_periods(calendar_service, calendar_id, start_time, end_time):
                     'start_time': start_time,
                     'end_time': end_time
                 })
-            print()
     except HttpError as error:
         print(f"An HTTP error occurred: {error}")
         print(f"Error details: {error.content}")
@@ -84,11 +89,13 @@ def main():
     creds = get_credentials()
     service = build("calendar", "v3", credentials=creds)
     
-    now = dt.now(pytz.utc).astimezone(paris_timezone).isoformat() 
+    now = dt.now(pytz.utc).astimezone(paris_timezone)
+    tomorrow_paris = (now + timedelta(days=1)).replace(hour=0, minute=0, second=0, microsecond=0).isoformat()
+ 
     end_time = (dt.now(pytz.utc) + timedelta(days=15)).astimezone(paris_timezone).isoformat() 
     
-    busy_periods_primary = get_busy_periods(service, "primary", now, end_time)
-    busy_periods_imported = get_busy_periods(service, "f41aqv7cglva98cfr3m5k2sviovu26cc@import.calendar.google.com", now, end_time)
+    busy_periods_primary = get_busy_periods(service, "primary", tomorrow_paris, end_time)
+    busy_periods_imported = get_busy_periods(service, external_calendar, tomorrow_paris, end_time)
     
     busy_periods = busy_periods_primary + busy_periods_imported
     sorted_busy_periods = sorted(busy_periods, key=lambda x: (x['date'], x['start_time']))

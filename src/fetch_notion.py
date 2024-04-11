@@ -3,8 +3,11 @@ import json
 import os
 from dotenv import load_dotenv
 
-
-load_dotenv()
+dotenv_path = './../ConfigShit/AutoTaskNotion-V1/.env'
+try:
+    load_dotenv(dotenv_path)
+except Exception as e:
+    print(f"Error loading .env file: {e}")
 notion_api_key = os.getenv('NOTION_API')
 notion_projet_id = os.getenv('PROJET_ID')
 notion_task_id = os.getenv('TASK_ID')
@@ -40,7 +43,7 @@ def get_pages(DATABASE_ID):
     payload = {"page_size": 100}
     response = requests.post(url, headers=headers, json=payload)
     data = response.json()
-    with open('db.json', 'w', encoding='utf8') as f:
+    with open('./src/db.json', 'w', encoding='utf8') as f:
         json.dump(data, f, ensure_ascii=False, indent=4)
     results = data.get('results', [])  
     return results

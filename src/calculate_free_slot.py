@@ -50,7 +50,6 @@ def calculate_available_periods(busy_periods, service, calendar_id):
                     'start_time': end_time.isoformat(),
                     'end_time': dt.combine(date, dt.max.time()).isoformat()
                 })
-    print("available_periods 1", available_periods)
     last_period = get_last_period_per_day(available_periods)
     schedule_diner_backhome_tasks(available_periods,last_period,service,calendar_id)
     for period in available_periods:
@@ -74,7 +73,6 @@ def calculate_available_periods(busy_periods, service, calendar_id):
                         schedule_lunch_task(service, calendar_id, period_start, period_end)
                         period['start_time'] = period_end.isoformat()
                         launch_scheduled_days.add(date)
-
 
     return available_periods
 
@@ -119,7 +117,7 @@ def schedule_diner_backhome_tasks(array_available,last_period, service, calendar
                     period_time = last_period[period]
                     if period_time > five_pm:
                         start_time = dt.combine(placeholder_date, seven_quarter_pm)
-                        end_time = start_time + timedelta(hours=1, minutes=30)
+                        end_time = start_time + timedelta(hours=1, minutes=15)
                     else:
                         chill = True
                         start_time_chill = dt.combine(placeholder_date, five_quarter_pm)

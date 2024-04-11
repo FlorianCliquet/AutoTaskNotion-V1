@@ -2,10 +2,12 @@ from datetime import datetime, timedelta
 from googleapiclient.errors import HttpError
 import random
 
-def insert_projects_into_calendar(service, calendar_id, array_available_periods, projects):
-    i = 0
+def insert_projects_into_calendar(service, calendar_id, array_available_periods, projects,total_iterations=0):
+    print("Inserting projects into calendar..." , total_iterations)
+    if total_iterations > 1000:
+        return
     for period in array_available_periods:
-        i += 1
+        total_iterations += 1
 
         if len(projects) == 0:
             break
@@ -49,9 +51,7 @@ def insert_projects_into_calendar(service, calendar_id, array_available_periods,
                 print(f"Error details: {error.content}")
         else:
             continue
-    if i < 5:
-        return
 
     duration_restante = [f for f in array_available_periods if (datetime.fromisoformat(f['end_time']) - datetime.fromisoformat(f['start_time'])).total_seconds() > 3600]
     if duration_restante:
-        insert_projects_into_calendar(service, calendar_id, duration_restante, projects)
+        insert_projects_into_calendar(service, calendar_id, duration_restante, projects,total_iterations)
