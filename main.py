@@ -95,9 +95,11 @@ def main():
     end_time = (dt.now(pytz.utc) + timedelta(days=15)).astimezone(paris_timezone).isoformat() 
     
     busy_periods_primary = get_busy_periods(service, "primary", tomorrow_paris, end_time)
-    busy_periods_imported = get_busy_periods(service, external_calendar, tomorrow_paris, end_time)
-    
-    busy_periods = busy_periods_primary + busy_periods_imported
+    if external_calendar:
+        busy_periods_imported = get_busy_periods(service, external_calendar, tomorrow_paris, end_time)
+        busy_periods = busy_periods_primary + busy_periods_imported
+    else:
+        busy_periods = busy_periods_primary
     sorted_busy_periods = sorted(busy_periods, key=lambda x: (x['date'], x['start_time']))
     
     available_periods = calculate_available_periods(sorted_busy_periods,service, "primary")
