@@ -24,11 +24,11 @@ def get_tasks_pages(DATABASE_ID):
     week = ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"]
     for page in pages:
         props = page['properties']
-        title = props.get("Nom de la tâche", {}).get("title", [{}])[0].get("plain_text", "No Title")
-        type = props.get("Étiquettes", {}).get("multi_select",[{}])[0].get("name", "No Type")
-        day = props.get("Jours", {}).get("select", {}).get("name", "No Date")
-        duration = props.get("Durée (heures)", {}).get("number", "No Time")
-        priorité = props.get("Priorité", {}).get("select", {}).get("name", "No Status")
+        title = props.get("Task Name", {}).get("title", [{}])[0].get("plain_text", "No Title")
+        type = props.get("Labels", {}).get("multi_select",[{}])[0].get("name", "No Type")
+        day = props.get("Day", {}).get("select", {}).get("name", "No Date")
+        duration = props.get("Duration (hours)", {}).get("number", "No Time")
+        priorité = props.get("Priority", {}).get("select", {}).get("name", "No Status")
         if day == "Everyday":  
             for days in week:
                 tasks.append({"title": title, "type": type, "duration": duration, "priority": priorité, "day": days})
@@ -53,9 +53,9 @@ def get_projet_pages(DATABASE_ID):
     projects = []  
     for page in pages:
         props = page['properties']
-        title = props.get("Nom du projet", {}).get("title", [{}])[0].get("plain_text", "No Title")
-        priority = props.get("Priorité", {}).get("select", {}).get("name", "No Priority")
-        since = props.get("Dates", {}).get("date", {}).get("start", "No Date")
+        title = props.get("Project Name", {}).get("title", [{}])[0].get("plain_text", "No Title")
+        priority = props.get("Priority", {}).get("select", {}).get("name", "No Priority")
+        since = props.get("Date", {}).get("date", {}).get("start", "No Date")
         projects.append({"title": title, "priority": priority, "since": since})  
 
     return projects
