@@ -63,7 +63,7 @@ def calculate_available_periods(busy_periods, service, calendar_id):
                 available_periods.remove(period)
         if date not in launch_scheduled_days:
             period_start = dt.fromisoformat(period['start_time'])
-            period_end = dt.fromisoformat(period['start_time']) + timedelta(minutes=45)
+            period_end = dt.fromisoformat(period['start_time']) + timedelta(minutes=30)
             now = dt.now()
             eleven_am = now.replace(hour=11, minute=0, second=0, microsecond=0).time()
             two_pm = now.replace(hour=14, minute=0, second=0, microsecond=0).time()
