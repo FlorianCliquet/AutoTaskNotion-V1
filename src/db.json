@@ -5,7 +5,7 @@
             "object": "page",
             "id": "9718a745-c95a-46f9-ae02-48ceae19abe5",
             "created_time": "2024-04-10T13:47:00.000Z",
-            "last_edited_time": "2024-04-10T13:48:00.000Z",
+            "last_edited_time": "2024-04-12T09:10:00.000Z",
             "created_by": {
                 "object": "user",
                 "id": "d03a8ca2-db7c-4850-b86d-dcb574535518"
@@ -33,7 +33,7 @@
                     "type": "rich_text",
                     "rich_text": []
                 },
-                "Nom du projet": {
+                "Project Name": {
                     "id": "title",
                     "type": "title",
                     "title": [
@@ -71,11 +71,11 @@
                     "type": "status",
                     "status": {
                         "id": "in-progress",
-                        "name": "En cours",
+                        "name": "In progress",
                         "color": "yellow"
                     }
                 },
-                "Priorité": {
+                "Priority": {
                     "id": "notion%3A%2F%2Fprojects%2Fpriority_property",
                     "type": "select",
                     "select": {
@@ -84,7 +84,7 @@
                         "color": "pink"
                     }
                 },
-                "Dates": {
+                "Date": {
                     "id": "notion%3A%2F%2Fprojects%2Fproject_dates_property",
                     "type": "date",
                     "date": {
@@ -124,7 +124,7 @@
             "object": "page",
             "id": "ea46f563-e05e-473e-b837-abb268d52cbd",
             "created_time": "2024-04-03T20:17:00.000Z",
-            "last_edited_time": "2024-04-04T15:00:00.000Z",
+            "last_edited_time": "2024-04-12T09:10:00.000Z",
             "created_by": {
                 "object": "user",
                 "id": "d03a8ca2-db7c-4850-b86d-dcb574535518"
@@ -152,7 +152,7 @@
                     "type": "rich_text",
                     "rich_text": []
                 },
-                "Nom du projet": {
+                "Project Name": {
                     "id": "title",
                     "type": "title",
                     "title": [
@@ -190,11 +190,11 @@
                     "type": "status",
                     "status": {
                         "id": "in-progress",
-                        "name": "En cours",
+                        "name": "In progress",
                         "color": "yellow"
                     }
                 },
-                "Priorité": {
+                "Priority": {
                     "id": "notion%3A%2F%2Fprojects%2Fpriority_property",
                     "type": "select",
                     "select": {
@@ -203,7 +203,7 @@
                         "color": "pink"
                     }
                 },
-                "Dates": {
+                "Date": {
                     "id": "notion%3A%2F%2Fprojects%2Fproject_dates_property",
                     "type": "date",
                     "date": {
@@ -243,7 +243,7 @@
             "object": "page",
             "id": "5c9b711e-c53c-426b-8958-66c356b8750a",
             "created_time": "2024-04-03T20:15:00.000Z",
-            "last_edited_time": "2024-04-04T15:00:00.000Z",
+            "last_edited_time": "2024-04-12T09:10:00.000Z",
             "created_by": {
                 "object": "user",
                 "id": "d03a8ca2-db7c-4850-b86d-dcb574535518"
@@ -291,7 +291,7 @@
                         }
                     ]
                 },
-                "Nom du projet": {
+                "Project Name": {
                     "id": "title",
                     "type": "title",
                     "title": [
@@ -329,11 +329,11 @@
                     "type": "status",
                     "status": {
                         "id": "in-progress",
-                        "name": "En cours",
+                        "name": "In progress",
                         "color": "yellow"
                     }
                 },
-                "Priorité": {
+                "Priority": {
                     "id": "notion%3A%2F%2Fprojects%2Fpriority_property",
                     "type": "select",
                     "select": {
@@ -342,7 +342,7 @@
                         "color": "brown"
                     }
                 },
-                "Dates": {
+                "Date": {
                     "id": "notion%3A%2F%2Fprojects%2Fproject_dates_property",
                     "type": "date",
                     "date": {
@@ -383,5 +383,5 @@
     "has_more": false,
     "type": "page_or_database",
     "page_or_database": {},
-    "request_id": "417db46d-e7bf-49c3-b7ed-73534af0c136"
+    "request_id": "7960c40a-d639-4283-954a-8ebe7fd8c4f1"
 }

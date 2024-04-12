@@ -24,16 +24,18 @@ def get_tasks_pages(DATABASE_ID):
     week = ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"]
     for page in pages:
         props = page['properties']
+        state = props.get("État", {}).get("select", {}).get("name", "No State")
         title = props.get("Task Name", {}).get("title", [{}])[0].get("plain_text", "No Title")
         type = props.get("Labels", {}).get("multi_select",[{}])[0].get("name", "No Type")
         day = props.get("Day", {}).get("select", {}).get("name", "No Date")
         duration = props.get("Duration (hours)", {}).get("number", "No Time")
         priorité = props.get("Priority", {}).get("select", {}).get("name", "No Status")
-        if day == "Everyday":  
-            for days in week:
-                tasks.append({"title": title, "type": type, "duration": duration, "priority": priorité, "day": days})
-        else:
-            tasks.append({"title": title, "type": type, "duration": duration, "priority": priorité, "day": day})
+        if state != "In progress":
+            if day == "Everyday":  
+                for days in week:
+                    tasks.append({"title": title, "type": type, "duration": duration, "priority": priorité, "day": days})
+            else:
+                tasks.append({"title": title, "type": type, "duration": duration, "priority": priorité, "day": day})
 
     tasks.sort(key=lambda x: (week.index(x["day"]), int(x["priority"])), reverse=False)
     return tasks
