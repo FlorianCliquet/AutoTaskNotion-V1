@@ -1,6 +1,6 @@
 --------------------------------------------AutoTaskNotion-V1[FR]-----------------------------------------------------
 
-Ce script facilite l'intégration de tâches et de projets de Notion dans votre calendrier Google. Vous pouvez importer des tâches et des projets de Notion dans votre Google Calendar en fournissant simplement les clés d'API de Notion et de Google Calendar, ainsi que les identifiants des bases de données Notion. Pour simplifier cela, j'ai créé un modèle Notion [lien vers le modèle à venir].
+Ce script facilite l'intégration de tâches et de projets de Notion dans votre calendrier Google. Vous pouvez importer des tâches et des projets de Notion dans votre Google Calendar en fournissant simplement les clés d'API de Notion et de Google Calendar, ainsi que les identifiants des bases de données Notion. Pour simplifier cela, j'ai créé un modèle Notion [https://grandiose-process-51d.notion.site/AutoTaskOrganiser-V1-e5f771f2f2914aad96958a3da9456eec].
 
 Pour l'instant ceci est qu'une V1, cela est en grande parti fait pour moi , mais lors d'une V2 je vais améliorer en pasant par une application React donc apparaition d'une interface graphique pour l'utilisateur et je ferais en sorte que tous soit controlable par une paramétrisation dans l'interface graphique.
 
